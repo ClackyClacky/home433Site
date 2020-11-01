@@ -1,0 +1,52 @@
+<html>
+    <head>
+                <link rel="stylesheet" href="/static/overrides.css"/>
+        <link rel="stylesheet" href="/static/bootstrap.min.css"/>
+    </head>
+  <body>
+  <div class="container" style ="width: 100%">
+    <p style="font-size: 32px">Current time is: {{current_time}}</p>
+    <p style="font-size: 32px"> Sunset time is: {{sunset_time}}</p>
+  <form action="/pc_lamp" method="POST">
+      <div class = "row" style = "height: 20%">
+                <div class ="container" style="height: 5%"></div>
+          <div class = "col sm-10">
+            <button class="btn btn-lg btn-block btn-success" type="submit"  style = "height: 100%" name= "PC_ON">Switch PC Lamp on</button>
+          </div>
+          <div class ="col sm-10">
+              <button class="btn btn-lg btn-block btn-danger" type="submit" style = "height: 100%" name= "PC_OFF" >Switch PC Lamp off</button>
+          </div>
+                </div>
+
+            <div class = "row" style = "height: 20%">
+                      <div class ="container" style="height: 5%"></div>
+          <div class = "col sm-10">
+            <button class="btn btn-lg btn-block btn-primary" type="submit" style = "height: 100%" name= "TV_LEFT_ON" >Switch Left TV Socket On</button>
+          </div>
+          <div class ="col sm-10">
+              <button class="btn btn-lg btn-block btn-danger" type="submit"  style = "height: 100%" name= "TV_LEFT_OFF">Switch Left TV Socket Off</button>
+          </div>
+                </div>
+            <div class = "row" style = "height: 20%">
+                      <div class ="container" style="height: 5%"></div>
+          <div class = "col sm-10">
+            <button class="btn btn-lg btn-block btn-secondary" type="submit"  style = "height: 100%" name= "TV_RIGHT_ON">Switch Right TV Socket On</button>
+          </div>
+          <div class ="col sm-10">
+              <button class="btn btn-lg btn-block btn-danger" type="submit"  style = "height: 100%" name= "TV_RIGHT_OFF">Switch Right TV Socket Off</button>
+          </div>
+                </div>
+
+                  <div class = "row" style = "height: 20%">
+                                  <div class ="container" style="height: 5%"></div>
+          <div class = "col sm-10">
+            <button class="btn btn-lg btn-block btn-info" type="submit" style = "height: 100%"  name= "START_SCAN">Start scanning</button>
+          </div>
+          <div class ="col sm-10">
+              <button class="btn btn-lg btn-block btn-warning" type="submit" style = "height: 100%"  name= "END_SCAN">Stop scanning</button>
+          </div>
+                </div>
+</form>
+      </div>
+</body>
+</html>
