@@ -35,7 +35,7 @@ rfdevice.tx_repeat = 10
 pc_lamp_status = False
 
 def counter(pc_lamp_status):
-    city = LocationInfo("Limerick", "Ireland", "Europe/London", 52.712380, -8.608660)
+    city = LocationInfo("Limerick", "Ireland", "Europe/London", X, Y)
     sun_stats = sun(city.observer, date=datetime.datetime.today())
     sunset_time = sun_stats['sunset']
     time = utc.localize(datetime.datetime.now())
